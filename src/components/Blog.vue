@@ -20,8 +20,9 @@ export default {
   data() {
     return {
       blogs: [
-        { title:'Blogpost #1', shortText: 'blabla', date: 'May 5, 2017'},
-        { title: 'Blogpost #2', shortText: 'Intro story', date: 'May 1, 2017'}
+        { title:'Blogpost #3', shortText: 'blabla', date: 'May 5, 2017'},
+        { title: 'Blogpost #2', shortText: 'Intro story', date: 'May 3, 2017'},
+        { title: 'Blogpost #1', shortText: 'Intro story', date: 'May 1, 2017'}
       ]
     }
   },
