@@ -7,12 +7,14 @@ import store from './store'
 Vue.use(VueRouter)
 import Home from './components/Home.vue'
 import Counter from './components/Counter.vue'
+import Blog from './components/Blog.vue'
 import Signin from './components/Signin.vue'
 const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', component: Home },
     { path: '/counter', component: Counter },
+    { path: '/blog', component: Blog },
     { path: '/signin', component: Signin }
   ]
 })

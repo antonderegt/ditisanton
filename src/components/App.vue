@@ -1,23 +1,25 @@
 <template>
-  <div id="app">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/counter">Counter</router-link> |
-    <a v-if="this.$store.state.user.displayName" href="/logout" @click="signOut">Log Out</a>
-    <router-link v-else to="/signin">Sign In</router-link>
-    <h1>{{msg}}</h1>
-    <hr />
-    <router-view />
+  <div id="app" class="container">
+    <div class="col-md-6 col-md-offset-3">
+      <router-link to="/">Home</router-link> |
+      <a href="https://github.com/antonderegt" target="_blank">GitHub</a> |
+      <a href="https://twitter.com/antonderegt" target="_blank">Twitter</a> |
+      <router-link to="/blog">Blog</router-link>
+      <!-- | -->
+      <!-- <a v-if="this.$store.state.user.displayName" href="/logout" @click="signOut">Log Out</a> -->
+      <!-- <router-link v-else to="/signin">Sign In</router-link> -->
+      <router-view />
+      <hr />
+    </div>
+    <p class="copyright col-md-12">
+      © Copyright 2017 Anton de Regt
+    </p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'app',
-  data () {
-    return {
-      msg: 'MEVN Boilerplate'
-    }
-  },
   methods: {
     signOut() {
       this.$store.dispatch('signOut')
@@ -50,5 +52,10 @@ ul {
 
 a {
   color: #42b983;
+}
+
+.copyright {
+  color: lightGray;
+  size: 10px;
 }
 </style>
