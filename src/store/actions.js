@@ -12,25 +12,15 @@ export const getUser = ({commit}) => {
   });
 }
 
-export const getCount = ({commit}) => {
-  fetch(`/api/count`, {
-    method: 'GET'
+export const getBlogs = ({commit}) => {
+  axios.get('/api/blog')
+  .then(function (response) {
+    console.log('got blog data: ', response.data);
+    commit(types.GET_BLOGS, response.data)
   })
-  .then(response => response.json())
-  .then(json => commit(types.GET_COUNT, json))
-}
-
-export const incCount = ({commit}, count_payload) => {
-  fetch(`/api/count`, {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ count: ++count_payload })
-  })
-  .then(response => response.json())
-  .then(json => commit(types.INC_COUNT, json))
+  .catch(function (error) {
+    console.log(error);
+  });
 }
 
 export const signOut = ({commit}) => {

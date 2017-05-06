@@ -24,7 +24,7 @@
           <div class="textRight">
             <h4>Current projects</h4>
             <p>
-              I'm working on FreeCodeCamp's backend certificate. I recently finished the <a href="http://voting-app-antonderegt.herokuapp.com" target="_blank">voting app</a>.
+              I'm working on freeCodeCamp's backend certificate. I recently finished the <a href="http://voting-app-antonderegt.herokuapp.com" target="_blank">voting app</a>.
             </p>
           </div>
         </div>

@@ -7,9 +7,12 @@ Vue.use(Vuex)
 
 const state = {
   user: {},
-  counts: {
-    count: -1
-  }
+  blogs: [
+    {
+      title: 'empty',
+      text: 'empty'
+    }
+  ]
 }
 
 export default new Vuex.Store({

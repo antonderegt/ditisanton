@@ -1,35 +1,29 @@
 <template>
   <div>
     <div class="page-header">
-      <img src="/assets/ditisanton.JPG"/>
-      <h1>Anton de Regt<br /><small>Web developer in my free time</small></h1>
+      <h1>Blogs</h1>
     </div>
     <div
+      v-for="(blog, index) in this.$store.state.blogs"
+      key="index"
       class="blogList"
-      v-for="blog in blogs"
       @click="showBlogPost(blog)"
     >
       <h4>{{blog.title}}</h4>
-      <h6>{{blog.date}}</h6>
+      <h6>{{new Date(blog.date).getDate()}}-{{new Date(blog.date).toLocaleString("en-us", { month: "long" })}}-{{new Date(blog.date).getFullYear()}}</h6>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      blogs: [
-        { title:'Blogpost #3', shortText: 'blabla', date: 'May 5, 2017'},
-        { title: 'Blogpost #2', shortText: 'Intro story', date: 'May 3, 2017'},
-        { title: 'Blogpost #1', shortText: 'Intro story', date: 'May 1, 2017'}
-      ]
-    }
-  },
   methods: {
     showBlogPost(blog) {
       console.log(blog.title);
     }
+  },
+  mounted() {
+    this.$store.dispatch('getBlogs')
   }
 }
 </script>

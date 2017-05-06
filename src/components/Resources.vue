@@ -1,48 +1,8 @@
 <template>
   <div>
     <div class="page-header">
-      <img src="/assets/ditisanton.JPG"/>
-      <h1>Anton de Regt<br /><small>Web developer in my free time</small></h1>
+      <h1>Resources</h1>
     </div>
-    <div
-      class="blogList"
-      v-for="blog in blogs"
-      @click="showBlogPost(blog)"
-    >
-      <h4>{{blog.title}}</h4>
-      <h6>{{blog.date}}</h6>
-    </div>
+    <h3>Awesome Vue course: <a href="https://www.udemy.com/vue-web-apps/learn/v4/overview" target="_blank">Vue JS - Mastering Web Apps</a></h3>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      blogs: [
-        { title:'Blogpost #3', shortText: 'blabla', date: 'May 5, 2017'},
-        { title: 'Blogpost #2', shortText: 'Intro story', date: 'May 3, 2017'},
-        { title: 'Blogpost #1', shortText: 'Intro story', date: 'May 1, 2017'}
-      ]
-    }
-  },
-  methods: {
-    showBlogPost(blog) {
-      console.log(blog.title);
-    }
-  }
-}
-</script>
-
-<style scoped>
-.blogList {
-  display: flex;
-  justify-content: space-between;
-  padding: 0% 5% 0% 5%;
-}
-
-.blogList:hover {
-  color: #42b983;
-  cursor: pointer;
-}
-</style>
