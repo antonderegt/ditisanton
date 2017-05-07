@@ -6,16 +6,18 @@ import store from './store'
 
 Vue.use(VueRouter)
 import Home from './components/Home.vue'
-import BlogsList from './components/BlogsList.vue'
+import BlogList from './components/BlogList.vue'
 import Resources from './components/Resources.vue'
 import Signin from './components/Signin.vue'
+import BlogPost from './components/BlogPost.vue'
 const router = new VueRouter({
   mode: 'history',
   routes: [
     { path: '/', component: Home },
-    { path: '/blog', component: BlogsList },
+    { path: '/blog', component: BlogList },
     { path: '/resources', component: Resources },
-    { path: '/signin', component: Signin }
+    { path: '/signin', component: Signin },
+    { path: '/blog/:title', component: BlogPost }
   ]
 })
 

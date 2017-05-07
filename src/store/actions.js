@@ -23,6 +23,17 @@ export const getBlogs = ({commit}) => {
   });
 }
 
+export const getPost = ({commit}, title) => {
+  axios.post(`/api/blog/${title}`)
+  .then(function (response) {
+    console.log('got post data: ', response.data);
+    commit(types.GET_POST, response.data)
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+}
+
 export const signOut = ({commit}) => {
   commit(types.SIGN_OUT)
 }

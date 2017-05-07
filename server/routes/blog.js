@@ -4,7 +4,11 @@ const express = require('express'),
       blogProjection = {
         __v: false,
         _id: false
-      }
+      },
+      init = new Blog({
+        title: `First post`,
+        text: `First blog text`
+      })
 
 module.exports = (() => {
     'use strict';
@@ -13,11 +17,6 @@ module.exports = (() => {
       Blog.find({}, blogProjection, (err, blogs) => {
         if(err) throw err
         if(!blogs.length) {
-          const init = new Blog({
-            title: `First post`,
-            text: `First blog text`
-          })
-
           init.save(err => {
             if(err) throw err
             console.log('Init saved')
@@ -30,15 +29,33 @@ module.exports = (() => {
       })
     })
 
-    router.post('/', (req, res) => {
-      const { blog } = req.body
-      const newScore = blog
-
-      Blog.findOneAndUpdate({}, { blog: newScore }, { projection: blogProjection }, (err, score) => {
+    router.post('/:title', (req, res) => {
+      let title = req.params.title.split('-').join(' ')
+      Blog.findOne({title}, blogProjection, (err, post) => {
         if(err) throw err
-        res.json({ blog: newScore })
+        if(!post) {
+          console.log('post not found');
+          init.save(err => {
+            if(err) throw err
+            console.log('Init saved')
+            res.json({post: init})
+          })
+        } else {
+          console.log('Post found: ', post)
+          res.json({ post })
+        }
       })
     })
+
+    // router.post('/', (req, res) => {
+    //   const { blog } = req.body
+    //   const newScore = blog
+    //
+    //   Blog.findOneAndUpdate({}, { blog: newScore }, { projection: blogProjection }, (err, score) => {
+    //     if(err) throw err
+    //     res.json({ blog: newScore })
+    //   })
+    // })
 
     return router;
 })();

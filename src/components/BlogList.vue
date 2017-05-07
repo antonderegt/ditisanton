@@ -19,7 +19,8 @@
 export default {
   methods: {
     showBlogPost(blog) {
-      console.log(blog.title);
+      let linkTitle = blog.title.split(' ').join('-').toLowerCase()
+      this.$router.push(`/blog/${linkTitle}`)
     }
   },
   mounted() {

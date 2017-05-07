@@ -9,10 +9,14 @@ const state = {
   user: {},
   blogs: [
     {
-      title: 'empty',
-      text: 'empty'
+      title: `Can't load the blogs...`,
+      text: 'null'
     }
-  ]
+  ],
+  post: {
+    title: 'Sorry',
+    text: 'No blog found...'
+  }
 }
 
 export default new Vuex.Store({

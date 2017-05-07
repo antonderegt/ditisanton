@@ -2,17 +2,22 @@
   <div>
     <div class="page-header">
       <!-- @TODO blogpost image -->
-      <h1>{{blog.title}}</h1>
+      <h1>{{this.$store.state.post.title}}</h1>
     </div>
     <p>
-      {{blog.shortText}}
+      {{this.$store.state.post.text}}
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['blog']
+  mounted() {
+    let linkTitle = this.$route.params.title.split('-').join(' ')
+    let title = linkTitle.charAt(0).toUpperCase() + linkTitle.slice(1)
+    this.$store.dispatch('getPost', title)
+    console.log(title)
+  }
 }
 </script>
 
