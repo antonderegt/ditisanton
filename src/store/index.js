@@ -16,7 +16,8 @@ const state = {
   post: {
     title: 'Sorry',
     text: 'No blog found...'
-  }
+  },
+  email: {}
 }
 
 export default new Vuex.Store({

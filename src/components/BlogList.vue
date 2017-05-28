@@ -19,7 +19,7 @@
 export default {
   methods: {
     showBlogPost(blog) {
-      let linkTitle = blog.title.split(' ').join('-').toLowerCase()
+      let linkTitle = blog.title.split(' ').join('-')
       this.$router.push(`/blog/${linkTitle}`)
     }
   },

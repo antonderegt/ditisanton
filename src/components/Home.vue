@@ -76,7 +76,7 @@
           <div class="textRight">
             <h4>Let's connect</h4>
             <p>
-              Click the button below if you want to be the first to receive updates.
+              Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
             </p>
             <div>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Stay Connected</button>
@@ -111,6 +111,34 @@
                   </div>
                 </div>
               </div>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailModal" data-whatever="@mdo">Message Me</button>
+              <div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="modalLabel">Send me a message</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="emailSubject" class="control-label">Subject:</label>
+                          <input type="text" class="form-control" id="emailSubject" v-model="emailSubject">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailText" class="control-label">Message:</label>
+                          <textarea class="form-control" id="emailText" v-model="emailText"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" @click="sendEmail">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
           </div>
         </div>
@@ -119,6 +147,28 @@
 </template>
 
 <script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      emailSubject: '',
+      emailText: ''
+    }
+  },
+  methods: {
+    sendEmail() {
+      let email = {
+        subject: this.emailSubject,
+        text: this.emailText
+      }
+      this.$store.dispatch('sendEmail', email)
+      console.log(email);
+      $('#mailModal').modal('hide')
+      this.emailSubject = ''
+      this.emailText = ''
+    }
+  }
+}
 </script>
 
 <style>

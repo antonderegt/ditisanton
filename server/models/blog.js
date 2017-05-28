@@ -6,7 +6,8 @@ const mongoose = require('mongoose'),
 var Blog = new Schema({
   title: String,
   text: String,
-  date: { type: Date, default: Date.now }
+  date: { type: Date, default: Date.now },
+  comments: [{ name: String, text: String, date: { type: Date, default: Date.now }}]
 });
 
 module.exports = mongoose.model('Blog', Blog);

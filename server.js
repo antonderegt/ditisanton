@@ -6,6 +6,7 @@ const express = require('express'),
       session = require('express-session'),
       blog = require('./server/routes/blog'),
       auth = require('./server/routes/auth'),
+      mailer = require('./server/routes/mailer'),
       index = require('./server/routes/index')
 
 require('dotenv').load();
@@ -28,6 +29,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use('/auth', auth)
+app.use('/api/mailer', mailer)
 app.use('/api/blog', blog)
 app.use('/', index)
 

@@ -10,7 +10,16 @@ export const mutations = {
   [types.GET_POST] (state, post_payload) {
     state.post = post_payload.post
   },
+  [types.POST_NEW_BLOG] (state, post_payload) {
+    state.post = post_payload.post
+  },
   [types.SIGN_OUT] (state) {
     state.user = {}
+  },
+  [types.SEND_EMAIL] (state, email_payload) {
+    state.email = email_payload
+  },
+  [types.POST_COMMENT] (state, post_payload) {
+    state.post = post_payload.post
   }
 }

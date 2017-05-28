@@ -1,4 +1,7 @@
 export const GET_USER = 'GET_USER'
 export const GET_BLOGS = 'GET_BLOGS'
 export const GET_POST = 'GET_POST'
+export const POST_NEW_BLOG = 'POST_NEW_BLOG'
 export const SIGN_OUT = 'SIGN_OUT'
+export const SEND_EMAIL = 'SEND_EMAIL'
+export const POST_COMMENT = 'POST_COMMENT'

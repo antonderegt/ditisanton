@@ -6,8 +6,8 @@ const express = require('express'),
         _id: false
       },
       init = new Blog({
-        title: `First post`,
-        text: `First blog text`
+        title: `No blogs yet`,
+        text: `Empty...`
       })
 
 module.exports = (() => {
@@ -29,8 +29,36 @@ module.exports = (() => {
       })
     })
 
+    router.post('/newblog', (req, res) => {
+      let post = new Blog(req.body)
+
+      post.save(err => {
+        if(err) throw err
+        console.log('Post saved')
+        res.json({ post })
+      })
+    })
+
+    router.post('/newcomment', (req, res) => {
+      let { blogTitle, name, text} = req.body
+      let comment = {
+        name,
+        text
+      }
+
+      Blog.findOneAndUpdate(
+        { title: blogTitle },
+        { $push: { comments: comment } },
+        { safe: true, upsert: true, new: true }, (err, post) => {
+        if(err) throw err
+        console.log('Comment saved', post)
+        res.json({ post })
+      })
+    })
+
     router.post('/:title', (req, res) => {
       let title = req.params.title.split('-').join(' ')
+
       Blog.findOne({title}, blogProjection, (err, post) => {
         if(err) throw err
         if(!post) {
@@ -46,16 +74,6 @@ module.exports = (() => {
         }
       })
     })
-
-    // router.post('/', (req, res) => {
-    //   const { blog } = req.body
-    //   const newScore = blog
-    //
-    //   Blog.findOneAndUpdate({}, { blog: newScore }, { projection: blogProjection }, (err, score) => {
-    //     if(err) throw err
-    //     res.json({ blog: newScore })
-    //   })
-    // })
 
     return router;
 })();
