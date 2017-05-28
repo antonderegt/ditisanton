@@ -21,7 +21,7 @@ const router = new VueRouter({
     { path: '/blog', component: BlogList },
     { path: '/resources', component: Resources },
     { path: '/login', component: Login },
-    { path: '/signup', component: Signup },
+    // { path: '/signup', component: Signup },
     { path: '/blog/:title', component: BlogPost },
     { path: '*', component: FourOFour }
   ]
