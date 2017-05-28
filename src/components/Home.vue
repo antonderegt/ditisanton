@@ -79,7 +79,7 @@
               Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
             </p>
             <div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Stay Connected</button>
+              <button type="button" class="btn btn-primary modalBtn" data-toggle="modal" data-target=".bs-example-modal-sm">Stay Connected</button>
               <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                 <div class="modal-dialog modal-sm" role="document">
                   <div class="modal-content">
@@ -112,7 +112,7 @@
                 </div>
               </div>
 
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mailModal" data-whatever="@mdo">Message Me</button>
+              <button type="button" class="btn btn-primary modalBtn" data-toggle="modal" data-target="#mailModal" data-whatever="@mdo">Message Me</button>
               <div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -191,6 +191,10 @@ img {
   width: 20%;
   height: 20%;
   border-radius: 50%;
+}
+
+.modalBtn {
+  margin: 10px
 }
 
 #mc_embed_signup{

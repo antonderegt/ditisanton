@@ -26,9 +26,6 @@ export default {
     signOut() {
       this.$store.dispatch('signOut')
     }
-  },
-  mounted() {
-    this.$store.dispatch('getUser')
   }
 }
 </script>
@@ -59,5 +56,9 @@ a {
 .copyright {
   color: lightGray;
   size: 10px;
+}
+
+.route {
+  margin: 20px;
 }
 </style>

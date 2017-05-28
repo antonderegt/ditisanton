@@ -9,7 +9,7 @@ const express = require('express'),
       mailer = require('./server/routes/mailer'),
       index = require('./server/routes/index')
 
-require('dotenv').load();
+require('dotenv').load()
 require('./passport')(passport)
 
 mongoose.Promise = global.Promise;
