@@ -5,7 +5,7 @@ export const mutations = {
     state.user = user_payload
   },
   [types.GET_BLOGS] (state, blog_payload) {
-    state.blogs = blog_payload.blogs
+    state.blogs = blog_payload.blogs.reverse()
   },
   [types.GET_POST] (state, post_payload) {
     state.post = post_payload.post
@@ -21,5 +21,8 @@ export const mutations = {
   },
   [types.POST_COMMENT] (state, post_payload) {
     state.post = post_payload.post
+  },
+  [types.DELETE_POST] (state, blog_payload) {
+    state.blogs = blog_payload.blogs.reverse()
   }
 }

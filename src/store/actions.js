@@ -34,6 +34,17 @@ export const getPost = ({commit}, title) => {
   });
 }
 
+export const deletePost = ({commit}, title) => {
+  axios.post(`/api/blog/delete/${title}`)
+  .then( response => {
+    console.log('new blog list: ', response.data);
+    commit(types.DELETE_POST, response.data)
+  })
+  .catch( error => {
+    console.log(error);
+  });
+}
+
 export const postNewBlog = ({commit}, post) => {
   axios.post(`/api/blog/newblog`, post)
   .then( response => {
