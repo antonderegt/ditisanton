@@ -56,16 +56,18 @@ module.exports = (() => {
       })
     })
 
-    router.post('/delete/:title', (req, res) => {
-      console.log('deleting');
-      let title = req.params.title
-      console.log(title);
-
+    router.post('/delete', (req, res) => {
+      let { title } = req.body
       Blog.findOneAndRemove({title}, (err, post) => {
         if(err) throw err
         console.log('--------------------------');
         console.log("removed:", post);
         console.log('--------------------------');
+
+        Blog.find({}, blogProjection, (err, blogs) => {
+          if(err) throw err
+          res.json({ blogs })
+        })
       })
     })
 

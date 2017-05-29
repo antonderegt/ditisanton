@@ -40,7 +40,9 @@ export default {
       this.$router.push(`/blog/${linkTitle}`)
     },
     deletePost(blog) {
-      let title = blog.title
+      let title = {
+        title: blog.title
+      }
       this.$store.dispatch('deletePost', title)
     }
   },
