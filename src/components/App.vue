@@ -6,8 +6,7 @@
       <a href="https://twitter.com/antonderegt" target="_blank">Twitter</a> |
       <router-link to="/blog">Blog</router-link> |
       <router-link to="/resources">Resources</router-link>
-      <!-- | -->
-      <!-- <a v-if="this.$store.state.user.displayName" href="/logout" @click="signOut">Log Out</a> -->
+      <a v-if="this.$store.state.user.local" href="/logout" @click="signOut"> | Log Out</a>
       <!-- <router-link v-else to="/signin">Sign In</router-link> -->
       <router-view />
       <hr />

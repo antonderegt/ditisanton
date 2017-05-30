@@ -1,7 +1,6 @@
 <template lang="html">
   <div>
     <div v-if="this.$store.state.user.local">
-      | <a href="/auth/logout">Logout</a> |
       <div class="page-header">
         <h1>New Blog</h1>
       </div>
