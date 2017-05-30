@@ -34,6 +34,28 @@ export const getPost = ({commit}, title) => {
   });
 }
 
+export const loadLastPost = ({commit}) => {
+  axios.get(`/api/blog/loadlastpost`)
+  .then( response => {
+    console.log('loaded latest post data: ', response.data);
+    commit(types.LOAD_LAST_POST, response.data)
+  })
+  .catch( error => {
+    console.log(error);
+  });
+}
+
+export const updatePost = ({commit}, post) => {
+  axios.post(`/api/blog/updatepost`, post)
+  .then( response => {
+    console.log('updated latest post data: ', response.data);
+    commit(types.UPDATE_POST, response.data)
+  })
+  .catch( error => {
+    console.log(error);
+  });
+}
+
 export const deletePost = ({commit}, title) => {
   axios.post(`/api/blog/delete`, title)
   .then( response => {

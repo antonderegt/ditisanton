@@ -29,6 +29,39 @@ module.exports = (() => {
       })
     })
 
+    router.get('/loadlastpost', (req, res) => {
+      Blog.findOne({}, {}, { sort: { 'date' : -1 } }, (err, post) => {
+        if(err) throw err
+        if(!post) {
+          init.save(err => {
+            if(err) throw err
+            console.log('Init saved')
+            res.json({blogs: init})
+          })
+        } else {
+          console.log('Latest post found: ', post)
+          res.json({ post })
+        }
+      })
+    })
+
+    router.post('/updatepost', (req, res) => {
+      let { _id, text, title} = req.body
+      Blog.findByIdAndUpdate({ _id }, {text, title}, (err, post) => {
+        if(err) throw err
+        if(!post) {
+          init.save(err => {
+            if(err) throw err
+            console.log('Init saved')
+            res.json({blogs: init})
+          })
+        } else {
+          console.log('updated post: ', post)
+          res.json({ post })
+        }
+      })
+    })
+
     router.post('/newblog', (req, res) => {
       let post = new Blog(req.body)
 

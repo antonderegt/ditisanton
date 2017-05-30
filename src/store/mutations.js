@@ -10,6 +10,12 @@ export const mutations = {
   [types.GET_POST] (state, post_payload) {
     state.post = post_payload.post
   },
+  [types.LOAD_LAST_POST] (state, post_payload) {
+    state.post = post_payload.post
+  },
+  [types.UPDATE_POST] (state, post_payload) {
+    state.post = post_payload.post
+  },
   [types.POST_NEW_BLOG] (state, post_payload) {
     state.post = post_payload.post
   },

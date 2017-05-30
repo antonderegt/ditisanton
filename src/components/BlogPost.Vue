@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <div class="page-header">
-      <!-- @TODO blogpost image -->
+      <!-- @TODO blogpost image AND EDIT POST -->
       <h1>{{this.$store.state.post.title}}</h1>
     </div>
     <p class="blogText" v-html="this.$store.state.post.text"></p>
@@ -51,6 +51,7 @@ export default {
   mounted() {
     let postTitle = this.$route.params.title.split('-').join(' ')
     this.$store.dispatch('getPost', postTitle)
+    this.$store.dispatch('getUser')
   },
   components: {
     Comment
