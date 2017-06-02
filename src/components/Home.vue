@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-header">
-      <img src="/assets/ditisanton.JPG"/>
+      <img src="/assets/ditisanton.png"/>
       <h1>Anton de Regt<br /><small>Web developer in my free time</small></h1>
     </div>
         <div class="box">
