@@ -2,8 +2,8 @@
   <div id="app" class="container">
     <div class="screen">
       <router-link to="/">Home</router-link> |
-      <a href="https://github.com/antonderegt" target="_blank">GitHub</a> |
-      <a href="https://twitter.com/antonderegt" target="_blank">Twitter</a> |
+      <a href="https://github.com/antonderegt" target="_blank" rel="noopener">GitHub</a> |
+      <a href="https://twitter.com/antonderegt" target="_blank" rel="noopener">Twitter</a> |
       <router-link to="/blog">Blog</router-link> |
       <router-link to="/resources">Resources</router-link>
       <a v-if="this.$store.state.user.local" href="/logout" @click="signOut"> | Log Out</a>
