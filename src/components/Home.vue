@@ -3,146 +3,141 @@
     <div class="page-header">
       <img src="/assets/ditisanton.png"/>
       <h1>Anton de Regt<br /><small>I am a Web developer in my free time</small></h1>
+      <hr />
     </div>
-        <div class="box">
-          <div class="imageLeft">
-            <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <title>background</title>
-                <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
-                <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                </g>
+      <div class="box">
+        <div class="imageLeft">
+          <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>background</title>
+              <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
-              <g>
-                <title>Layer 1</title>
-                <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
-                <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(11.809578687124604,0,0,14.153656210190517,-3607.25327877352,-3036.4358253455816) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_2" y="226.8288" x="308.82268" stroke-width="0" fill="#ffffff">&lt;/&gt;</text>
-              </g>
-            </svg>
-          </div>
-          <div class="textRight">
-            <h4>Current projects</h4>
-            <p>
-              I'm working on freeCodeCamp's backend certificate. I recently finished the <a href="http://voting-app-antonderegt.herokuapp.com" target="_blank">voting app</a>.
-            </p>
-          </div>
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(11.809578687124604,0,0,14.153656210190517,-3607.25327877352,-3036.4358253455816) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_2" y="226.8288" x="308.82268" stroke-width="0" fill="#ffffff">&lt;/&gt;</text>
+            </g>
+          </svg>
         </div>
-        <div class="box">
-          <div class="imageLeft">
-            <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="https://www.w3.org/2000/svg">
-              <g>
-                <title>background</title>
-                <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
-                <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                </g>
-              </g>
-              <g>
-                <title>Layer 1</title>
-                <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
-                <path stroke="#000" id="svg_3" d="m125,105.28101c26.38689,-60.83699 129.77159,0 0,78.21899c-129.77159,-78.21899 -26.38689,-139.05598 0,-78.21899z" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
-              </g>
-            </svg>
-          </div>
-          <div class="textRight">
-            <h4>Things I've made</h4>
-            <p>
-              <a href="https://github.com/antonderegt/mevn-github-auth" target="_blank">MEVN Boilerplate</a>,
-              <a href="https://github.com/antonderegt/nac" target="_blank">FreeCodeCamp challenges</a>,
-              <a href="https://github.com/antonderegt/fcc" target="_blank">Program Guide App</a>,
-              <a href="https://antonderegt.github.io/roxean-bot-landing-page/" target="_blank">Slack Bot</a>.
-              You can find more on <a href="https://github.com/antonderegt/" target="_blank">GitHub</a>.
-            </p>
-          </div>
+        <div class="textRight">
+          <h3>Current projects</h3>
+          <p>
+            I'm working on freeCodeCamp's backend certificate. I recently finished the <a href="http://voting-app-antonderegt.herokuapp.com" target="_blank">voting app</a>.
+          </p>
         </div>
-        <div class="box">
-          <div class="imageLeft">
-            <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <title>background</title>
-                <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
-                <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
-                  <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
-                </g>
+      </div>
+      <div class="box">
+        <div class="imageLeft">
+          <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="https://www.w3.org/2000/svg">
+            <g>
+              <title>background</title>
+              <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
-              <g>
-                <title>Layer 1</title>
-                <ellipse fill="#82c0ff" stroke="#000" stroke-width="0" cx="125" cy="125" id="svg_1" rx="100" ry="100"/>
-                <path id="svg_3" d="m125.00001,80.49999c-32.02999,0 -58.00001,15.92778 -58.00001,35.57705c0,11.23901 8.5253,21.25287 21.79868,27.77034c-1.88862,5.77822 -5.65766,12.17804 -12.94224,17.83842c0,0 17.00377,-1.03874 29.0138,-12.27929c0.69142,0.15651 1.4071,0.27432 2.10505,0.41884c-0.65593,-1.80641 -1.04209,-3.68428 -1.04209,-5.63815c0,-13.25698 15.99247,-23.63753 36.41787,-23.63753c14.67078,0 27.01534,5.3758 32.82639,13.30766c4.94691,-5.23577 7.82254,-11.30015 7.82254,-17.78482c0,-19.64476 -25.97002,-35.57254 -57.99999,-35.57254l0,0zm49.52962,63.69026c0,-10.89926 -14.40426,-19.74169 -32.18342,-19.74169c-17.76946,0 -32.18184,8.84243 -32.18184,19.74169c0,10.90511 14.41238,19.74313 32.18184,19.74313c3.93543,0 7.68357,-0.45459 11.16834,-1.24741c6.66252,6.24023 16.09732,6.81404 16.09732,6.81404c-4.0404,-3.1418 -6.12771,-6.69195 -7.1779,-9.90073c7.36052,-3.61265 12.09565,-9.16887 12.09565,-15.40902z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <path stroke="#000" id="svg_3" d="m125,105.28101c26.38689,-60.83699 129.77159,0 0,78.21899c-129.77159,-78.21899 -26.38689,-139.05598 0,-78.21899z" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
+            </g>
+          </svg>
+        </div>
+        <div class="textRight">
+          <h3>Things I've made</h3>
+          <p>
+            <a href="https://github.com/antonderegt/mevn-github-auth" target="_blank">MEVN Boilerplate</a>,
+            <a href="https://github.com/antonderegt/nac" target="_blank">FreeCodeCamp challenges</a>,
+            <a href="https://github.com/antonderegt/fcc" target="_blank">Program Guide App</a>,
+            <a href="https://antonderegt.github.io/roxean-bot-landing-page/" target="_blank">Slack Bot</a>.
+            You can find more on <a href="https://github.com/antonderegt/" target="_blank">GitHub</a>.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="imageLeft">
+          <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>background</title>
+              <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
-            </svg>
-          </div>
-          <div class="textRight">
-            <h4>Let's connect</h4>
-            <p>
-              Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
-            </p>
-            <div>
-              <button type="button" class="btn btn-primary modalBtn" data-toggle="modal" data-target=".bs-example-modal-sm">Stay Connected</button>
-              <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                <div class="modal-dialog modal-sm" role="document">
-                  <div class="modal-content">
-                    <!-- Begin MailChimp Signup Form -->
-                    <div id="mc_embed_signup">
-                      <form action="//ditisanton.us15.list-manage.com/subscribe/post?u=4daa678e6fe357534ba238865&amp;id=8aed1b2d49" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll">
-                          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                          <div class="mc-field-group">
-                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                            </label>
-                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                          </div>
-                          <div class="mc-field-group">
-                            <label for="mce-FNAME">First Name </label>
-                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                          </div>
-                          <div id="mce-responses" class="clear">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                          </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4daa678e6fe357534ba238865_8aed1b2d49" tabindex="-1" value=""></div>
-                          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                        </div>
-                      </form>
-                    </div>
-                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-                    <!--End mc_embed_signup-->
-                  </div>
-                </div>
-              </div>
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <ellipse fill="#82c0ff" stroke="#000" stroke-width="0" cx="125" cy="125" id="svg_1" rx="100" ry="100"/>
+              <path id="svg_3" d="m125.00001,80.49999c-32.02999,0 -58.00001,15.92778 -58.00001,35.57705c0,11.23901 8.5253,21.25287 21.79868,27.77034c-1.88862,5.77822 -5.65766,12.17804 -12.94224,17.83842c0,0 17.00377,-1.03874 29.0138,-12.27929c0.69142,0.15651 1.4071,0.27432 2.10505,0.41884c-0.65593,-1.80641 -1.04209,-3.68428 -1.04209,-5.63815c0,-13.25698 15.99247,-23.63753 36.41787,-23.63753c14.67078,0 27.01534,5.3758 32.82639,13.30766c4.94691,-5.23577 7.82254,-11.30015 7.82254,-17.78482c0,-19.64476 -25.97002,-35.57254 -57.99999,-35.57254l0,0zm49.52962,63.69026c0,-10.89926 -14.40426,-19.74169 -32.18342,-19.74169c-17.76946,0 -32.18184,8.84243 -32.18184,19.74169c0,10.90511 14.41238,19.74313 32.18184,19.74313c3.93543,0 7.68357,-0.45459 11.16834,-1.24741c6.66252,6.24023 16.09732,6.81404 16.09732,6.81404c-4.0404,-3.1418 -6.12771,-6.69195 -7.1779,-9.90073c7.36052,-3.61265 12.09565,-9.16887 12.09565,-15.40902z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
+            </g>
+          </svg>
+        </div>
+        <div class="textRight">
+          <h3>Let's connect</h3>
+          <p>
+            Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
+          </p>
 
-              <button type="button" class="btn btn-primary modalBtn" data-toggle="modal" data-target="#mailModal" data-whatever="@mdo">Message Me</button>
-              <div class="modal fade" id="mailModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title" id="modalLabel">Send me a message</h4>
+          <button id="subscribeBtn" class="modalBtn">Stay Connected</button>
+          <div id="subscribeModal" class="modal">
+            <div class="modal-content">
+              <!-- Begin MailChimp Signup Form -->
+              <div id="mc_embed_signup">
+                <form action="//ditisanton.us15.list-manage.com/subscribe/post?u=4daa678e6fe357534ba238865&amp;id=8aed1b2d49" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                     </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="form-group">
-                          <label for="emailSubject" class="control-label">Subject:</label>
-                          <input type="text" class="form-control" id="emailSubject" v-model="emailSubject">
-                        </div>
-                        <div class="form-group">
-                          <label for="emailText" class="control-label">Message:</label>
-                          <textarea class="form-control" id="emailText" v-model="emailText"></textarea>
-                        </div>
-                      </form>
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME">First Name </label>
+                      <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary" @click="sendEmail">Send message</button>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4daa678e6fe357534ba238865_8aed1b2d49" tabindex="-1" value=""></div>
+                    <div class="clear">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                      <span class="close">&times;</span>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
+              <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+              <!--End mc_embed_signup-->
+            </div>
+          </div>
+
+          <button id="messageMeBtn" class="modalBtn">Message Me</button>
+          <div id="messageMeModal" class="modal">
+            <div class="modal-content">
+                <h3>Send me a message</h3>
+                <hr />
+                <form>
+                  <div>
+                    <label>Subject</label>
+                    <input type="text" v-model="emailSubject" placeholder="Subject...">
+                  </div>
+                  <div>
+                    <label>Message</label>
+                    <textarea v-model="emailText" placeholder="Your message..."></textarea>
+                  </div>
+                </form>
+              <div>
+                <span class="close"></span>
+                <button @click="sendEmail">Send message</button>
+                <button class="closeButton" @click="closeModal('MESSAGE_ME')">Close</button>
               </div>
+            </div>
+          </div>
           </div>
         </div>
-    </div>
   </div>
 </template>
 
@@ -163,10 +158,63 @@ export default {
       }
       this.$store.dispatch('sendEmail', email)
       console.log(email);
-      $('#mailModal').modal('hide')
+      document.getElementById('messageMeModal').style.display = "none"
       this.emailSubject = ''
       this.emailText = ''
+    },
+    closeModal(modal) {
+      switch (modal) {
+        case 'MESSAGE_ME':
+          document.getElementById('messageMeModal').style.display = "none";
+          break;
+        case 'SUBSCIBE':
+          document.getElementById('messageMeModal').style.display = "none";
+          break;
+        default:
+
+      }
     }
+  },
+  mounted () {
+    // Get the modal
+    var sModal = document.getElementById('subscribeModal');
+    // Get the button that opens the modal
+    var sBtn = document.getElementById("subscribeBtn");
+    // Get the <span> element that closes the modal
+    var sSpan = document.getElementsByClassName("close")[0];
+    // When the user clicks the button, open the modal
+    sBtn.onclick = function() {
+        sModal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    sSpan.onclick = function() {
+        sModal.style.display = "none";
+    }
+
+    // Get the modal
+    var mmModal = document.getElementById('messageMeModal');
+    // Get the button that opens the modal
+    var mmBtn = document.getElementById("messageMeBtn");
+    // Get the <span> element that closes the modal
+    var mmSpan = document.getElementsByClassName("close")[1];
+    // When the user clicks the button, open the modal
+    mmBtn.onclick = function() {
+        mmModal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    mmSpan.onclick = function() {
+        mmModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == sModal) {
+        sModal.style.display = "none";
+      } else if (event.target == mmModal) {
+        mmModal.style.display = "none";
+      }
+    }
+
   }
 }
 </script>
@@ -175,7 +223,7 @@ export default {
 .box {
   display: flex;
   text-align: left;
-  padding: 5%;
+  padding: 3%;
 }
 
 .imageLeft {
@@ -195,6 +243,52 @@ img {
 
 .modalBtn {
   margin: 10px
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 80%;
+    position: relative;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    position: absolute;
+    right: -3px;
+    top: -6px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.closeOffset {
+  right: 13px;
+  top: 19px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #mc_embed_signup{

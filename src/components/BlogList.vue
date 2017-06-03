@@ -2,6 +2,7 @@
   <div>
     <div class="page-header">
       <h1>Blogs</h1>
+      <hr />
     </div>
     <div v-if="$store.state.user.local">
       <div

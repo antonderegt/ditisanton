@@ -4,11 +4,6 @@ import VueRouter from 'vue-router'
 import App from './components/App.vue'
 import store from './store'
 
-// const Home = resolve => {
-//   require.ensure(['./components/Home.vue'], () => {
-//     resolve(require('./components/Home.vue'))
-//   })
-// }
 const Home = resolve => require(['./components/Home.vue'], resolve)
 
 const BlogList = resolve => {
