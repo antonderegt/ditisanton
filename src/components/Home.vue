@@ -10,15 +10,15 @@
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
             <g>
               <title>background</title>
-              <rect fill="none" id="canvas_background" height="252" width="252" y="-1" x="-1"/>
-              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+              <rect fill="none" height="252" width="252" y="-1" x="-1"/>
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%">
                 <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
             </g>
             <g>
               <title>Layer 1</title>
-              <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
-              <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(11.809578687124604,0,0,14.153656210190517,-3607.25327877352,-3036.4358253455816) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" id="svg_2" y="226.8288" x="308.82268" stroke-width="0" fill="#ffffff">&lt;/&gt;</text>
+              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(11.809578687124604,0,0,14.153656210190517,-3607.25327877352,-3036.4358253455816) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" y="226.8288" x="308.82268" stroke-width="0" fill="#ffffff">&lt;/&gt;</text>
             </g>
           </svg>
         </div>
@@ -34,13 +34,13 @@
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="https://www.w3.org/2000/svg">
             <g>
               <rect fill="none" height="252" width="252" y="-1" x="-1"/>
-              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%">
                 <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
             </g>
             <g>
-              <ellipse ry="100" rx="100" id="svg_1" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
-              <path stroke="#000" id="svg_3" d="m125,105.28101c26.38689,-60.83699 129.77159,0 0,78.21899c-129.77159,-78.21899 -26.38689,-139.05598 0,-78.21899z" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
+              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <path stroke="#000" d="m125,105.28101c26.38689,-60.83699 129.77159,0 0,78.21899c-129.77159,-78.21899 -26.38689,-139.05598 0,-78.21899z" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
             </g>
           </svg>
         </div>
@@ -60,13 +60,13 @@
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
             <g>
               <rect fill="none" height="252" width="252" y="-1" x="-1"/>
-              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+              <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%">
                 <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
             </g>
             <g>
-              <ellipse fill="#82c0ff" stroke="#000" stroke-width="0" cx="125" cy="125" id="svg_1" rx="100" ry="100"/>
-              <path id="svg_3" d="m125.00001,80.49999c-32.02999,0 -58.00001,15.92778 -58.00001,35.57705c0,11.23901 8.5253,21.25287 21.79868,27.77034c-1.88862,5.77822 -5.65766,12.17804 -12.94224,17.83842c0,0 17.00377,-1.03874 29.0138,-12.27929c0.69142,0.15651 1.4071,0.27432 2.10505,0.41884c-0.65593,-1.80641 -1.04209,-3.68428 -1.04209,-5.63815c0,-13.25698 15.99247,-23.63753 36.41787,-23.63753c14.67078,0 27.01534,5.3758 32.82639,13.30766c4.94691,-5.23577 7.82254,-11.30015 7.82254,-17.78482c0,-19.64476 -25.97002,-35.57254 -57.99999,-35.57254l0,0zm49.52962,63.69026c0,-10.89926 -14.40426,-19.74169 -32.18342,-19.74169c-17.76946,0 -32.18184,8.84243 -32.18184,19.74169c0,10.90511 14.41238,19.74313 32.18184,19.74313c3.93543,0 7.68357,-0.45459 11.16834,-1.24741c6.66252,6.24023 16.09732,6.81404 16.09732,6.81404c-4.0404,-3.1418 -6.12771,-6.69195 -7.1779,-9.90073c7.36052,-3.61265 12.09565,-9.16887 12.09565,-15.40902z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
+              <ellipse fill="#82c0ff" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
+              <path d="m125.00001,80.49999c-32.02999,0 -58.00001,15.92778 -58.00001,35.57705c0,11.23901 8.5253,21.25287 21.79868,27.77034c-1.88862,5.77822 -5.65766,12.17804 -12.94224,17.83842c0,0 17.00377,-1.03874 29.0138,-12.27929c0.69142,0.15651 1.4071,0.27432 2.10505,0.41884c-0.65593,-1.80641 -1.04209,-3.68428 -1.04209,-5.63815c0,-13.25698 15.99247,-23.63753 36.41787,-23.63753c14.67078,0 27.01534,5.3758 32.82639,13.30766c4.94691,-5.23577 7.82254,-11.30015 7.82254,-17.78482c0,-19.64476 -25.97002,-35.57254 -57.99999,-35.57254l0,0zm49.52962,63.69026c0,-10.89926 -14.40426,-19.74169 -32.18342,-19.74169c-17.76946,0 -32.18184,8.84243 -32.18184,19.74169c0,10.90511 14.41238,19.74313 32.18184,19.74313c3.93543,0 7.68357,-0.45459 11.16834,-1.24741c6.66252,6.24023 16.09732,6.81404 16.09732,6.81404c-4.0404,-3.1418 -6.12771,-6.69195 -7.1779,-9.90073c7.36052,-3.61265 12.09565,-9.16887 12.09565,-15.40902z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
             </g>
           </svg>
         </div>
