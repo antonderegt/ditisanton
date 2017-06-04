@@ -8,7 +8,10 @@
       <router-link to="/resources">Resources</router-link>
       <a v-if="this.$store.state.user.local" href="/logout" @click="signOut"> | Log Out</a>
       <!-- <router-link v-else to="/signin">Sign In</router-link> -->
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
+
       <hr />
     </div>
     <p class="copyright">
@@ -92,6 +95,14 @@ hr {
 small {
   color: gray;
   font-size: 22px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s ease;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 
 .container {

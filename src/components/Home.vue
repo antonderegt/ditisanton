@@ -76,64 +76,67 @@
             Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
           </p>
 
-          <button id="subscribeBtn" class="modalBtn">Stay Connected</button>
-          <div id="subscribeModal" class="modal">
+          <button id="subscribeBtn" class="modalBtn" @click="toggleModal('SUBSCIBE')">Stay Connected</button>
+          <transition name="fade" mode="out-in">
+            <div v-if="showSubscribeModal" class="modal">
             <div class="modal-content">
-              <!-- Begin MailChimp Signup Form -->
-              <div id="mc_embed_signup">
-                <form action="//ditisanton.us15.list-manage.com/subscribe/post?u=4daa678e6fe357534ba238865&amp;id=8aed1b2d49" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-                    <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                    <div class="mc-field-group">
-                      <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                      </label>
-                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                  <form action="//ditisanton.us15.list-manage.com/subscribe/post?u=4daa678e6fe357534ba238865&amp;id=8aed1b2d49" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                      <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                      <div class="mc-field-group">
+                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                        </label>
+                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                      </div>
+                      <div class="mc-field-group">
+                        <label for="mce-FNAME">First Name </label>
+                        <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                      </div>
+                      <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                      </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4daa678e6fe357534ba238865_8aed1b2d49" tabindex="-1" value=""></div>
+                      <div class="clear">
+                        <button>Subscribe</button>
+                        <button class="closeButton" @click.prevent="closeModal('SUBSCIBE')">Close</button>
+                      </div>
                     </div>
-                    <div class="mc-field-group">
-                      <label for="mce-FNAME">First Name </label>
-                      <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-                    </div>
-                    <div id="mce-responses" class="clear">
-                      <div class="response" id="mce-error-response" style="display:none"></div>
-                      <div class="response" id="mce-success-response" style="display:none"></div>
-                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4daa678e6fe357534ba238865_8aed1b2d49" tabindex="-1" value=""></div>
-                    <div class="clear">
-                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                      <span class="close">&times;</span>
-                    </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
               </div>
-              <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-              <!--End mc_embed_signup-->
             </div>
-          </div>
+          </transition>
 
-          <button id="messageMeBtn" class="modalBtn">Message Me</button>
-          <div id="messageMeModal" class="modal">
-            <div class="modal-content">
-                <h3>Send me a message</h3>
-                <hr />
-                <form>
-                  <div>
-                    <label>Subject</label>
-                    <input type="text" v-model="emailSubject" placeholder="Subject...">
-                  </div>
-                  <div>
-                    <label>Message</label>
-                    <textarea v-model="emailText" placeholder="Your message..."></textarea>
-                  </div>
-                </form>
-              <div>
-                <span class="close"></span>
-                <button @click="sendEmail">Send message</button>
-                <button class="closeButton" @click="closeModal('MESSAGE_ME')">Close</button>
+          <button class="modalBtn" @click="toggleModal('MESSAGE_ME')">Message Me</button>
+          <transition name="fade" mode="out-in">
+            <div v-if="showMessageMeModal" class="modal">
+              <div class="modal-content">
+                  <h3>Send me a message</h3>
+                  <hr />
+                  <form>
+                    <div>
+                      <label>Subject</label>
+                      <input type="text" v-model="emailSubject" placeholder="Subject...">
+                    </div>
+                    <div>
+                      <label>Message</label>
+                      <textarea v-model="emailText" placeholder="Your message..."></textarea>
+                    </div>
+                  </form>
+                <div>
+                  <button @click="sendEmail">Send message</button>
+                  <button class="closeButton" @click="closeModal('MESSAGE_ME')">Close</button>
+                </div>
               </div>
             </div>
-          </div>
-          </div>
+          </transition>
         </div>
+      </div>
   </div>
 </template>
 
@@ -143,7 +146,9 @@ export default {
   data() {
     return {
       emailSubject: '',
-      emailText: ''
+      emailText: '',
+      showMessageMeModal: false,
+      showSubscribeModal: false
     }
   },
   methods: {
@@ -153,64 +158,32 @@ export default {
         text: this.emailText
       }
       this.$store.dispatch('sendEmail', email)
-      console.log(email);
-      document.getElementById('messageMeModal').style.display = "none"
+      this.showMessageMeModal = false
       this.emailSubject = ''
       this.emailText = ''
+    },
+    toggleModal(modal) {
+      switch (modal) {
+        case 'MESSAGE_ME':
+          this.showMessageMeModal = true
+          break;
+        case 'SUBSCIBE':
+          this.showSubscribeModal = true
+          break;
+        default:
+      }
     },
     closeModal(modal) {
       switch (modal) {
         case 'MESSAGE_ME':
-          document.getElementById('messageMeModal').style.display = "none";
+          this.showMessageMeModal = false
           break;
         case 'SUBSCIBE':
-          document.getElementById('messageMeModal').style.display = "none";
+          this.showSubscribeModal = false
           break;
         default:
-
       }
     }
-  },
-  mounted () {
-    // Get the modal
-    var sModal = document.getElementById('subscribeModal');
-    // Get the button that opens the modal
-    var sBtn = document.getElementById("subscribeBtn");
-    // Get the <span> element that closes the modal
-    var sSpan = document.getElementsByClassName("close")[0];
-    // When the user clicks the button, open the modal
-    sBtn.onclick = function() {
-        sModal.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    sSpan.onclick = function() {
-        sModal.style.display = "none";
-    }
-
-    // Get the modal
-    var mmModal = document.getElementById('messageMeModal');
-    // Get the button that opens the modal
-    var mmBtn = document.getElementById("messageMeBtn");
-    // Get the <span> element that closes the modal
-    var mmSpan = document.getElementsByClassName("close")[1];
-    // When the user clicks the button, open the modal
-    mmBtn.onclick = function() {
-        mmModal.style.display = "block";
-    }
-    // When the user clicks on <span> (x), close the modal
-    mmSpan.onclick = function() {
-        mmModal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == sModal) {
-        sModal.style.display = "none";
-      } else if (event.target == mmModal) {
-        mmModal.style.display = "none";
-      }
-    }
-
   }
 }
 </script>
@@ -242,7 +215,6 @@ img {
 }
 
 .modal {
-    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
