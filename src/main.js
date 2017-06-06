@@ -6,6 +6,8 @@ import store from './store'
 
 const Home = resolve => require(['./components/Home.vue'], resolve)
 
+const Social = resolve => require(['./components/Social.vue'], resolve)
+
 const BlogList = resolve => {
   require.ensure(['./components/BlogList.vue'], () => {
     resolve(require('./components/BlogList.vue'))
@@ -56,6 +58,7 @@ const router = new VueRouter({
     { path: '/', component: Home },
     { path: '/newblog', component: NewBlog },
     { path: '/blog', component: BlogList },
+    { path: '/social', component: Social },
     { path: '/resources', component: Resources },
     { path: '/login', component: Login },
     // { path: '/signup', component: Signup },

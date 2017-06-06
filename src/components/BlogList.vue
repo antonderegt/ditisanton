@@ -1,55 +1,19 @@
 <template>
   <div>
-    <div class="page-header">
-      <h1>Blogs</h1>
-      <hr />
-    </div>
-    <div v-if="$store.state.user.local">
-      <div
-        v-for="(blog, index) in this.$store.state.blogs"
-        key="index"
-        class="blogList"
-      >
-      <div @click="showBlogPost(blog)">
-        <h4>{{blog.title}}</h4>
-        <h6>{{new Date(blog.date).getDate()}}-{{new Date(blog.date).toLocaleString("en-us", { month: "long" })}}-{{new Date(blog.date).getFullYear()}}</h6>
-      </div>
-        <p @click="deletePost(blog)">
-          x
-        </p>
-      </div>
-    </div>
-    <div v-else>
-      <div
-        v-for="(blog, index) in this.$store.state.blogs"
-        key="index"
-        class="blogList"
-        @click="showBlogPost(blog)"
-      >
-        <h4>{{blog.title}}</h4>
-        <h6>{{new Date(blog.date).getDate()}}-{{new Date(blog.date).toLocaleString("en-us", { month: "long" })}}-{{new Date(blog.date).getFullYear()}}</h6>
-      </div>
-    </div>
+    <h1>Blogs</h1>
+    <hr>
+    <BlogPost title="How my site loads in 1.25s" link="https://medium.com/@antonderegt/how-my-site-loads-in-1-25s-56151a06ab8d" text="Last week I received a shocking message from Google. I forgot how it happened but Google asked me if I wanted to test how mobile friendly..."/>
+    <BlogPost title="Keep Moving Your Fucking Fingers" link="https://medium.com/@antonderegt/https-medium-com-antonderegt-keep-moving-your-fucking-fingers-cdd1c631abf3" text="In this post, I’m going to talk about how a project I was trying to do with two dudes I never met before totally failed. First I’ll start..."/>
+    <BlogPost title="Nodemailer Struggles" link="https://medium.com/@antonderegt/nodemailer-struggles-9bbf702aee01" text="Have any of you used Nodemailer before? Until this afternoon I hadn’t, but hey, it’s just another package can’t be too hard. On this site..."/>
   </div>
 </template>
 
 <script>
+import BlogPost from './BlogPost.vue'
+
 export default {
-  methods: {
-    showBlogPost(blog) {
-      let linkTitle = blog.title.split(' ').join('-')
-      this.$router.push(`/blog/${linkTitle}`)
-    },
-    deletePost(blog) {
-      let title = {
-        title: blog.title
-      }
-      this.$store.dispatch('deletePost', title)
-    }
-  },
-  mounted() {
-    this.$store.dispatch('getBlogs')
-    this.$store.dispatch('getUser')
+  components: {
+    BlogPost
   }
 }
 </script>
