@@ -16,7 +16,7 @@
     <p>A bot helps me with retweets.</p>
     <h2><a href="https://www.instagram.com/antonderegt/" target="_blank" rel="noopener"><img src="/assets/icons/instagram.svg" width="32px" alt="Instagram"></a></h2>
     <p>All the pictures.</p>
-    <h2><a href="https://www.linkedin.com/in/antonderegt/" target="_blank" rel="noopener"><img src="/assets/icons/linkedIn.svg" width="32px" alt="LinkedIn"></a></h2>
+    <h2><a href="https://www.linkedin.com/in/antonderegt/" target="_blank" rel="noopener"><img src="/assets/icons/linkedin.svg" width="32px" alt="LinkedIn"></a></h2>
     <p>The professional part.</p>
   </div>
 </template>
