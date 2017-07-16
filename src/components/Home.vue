@@ -1,23 +1,21 @@
 <template>
   <div>
     <div class="page-header">
-      <img src="/assets/ditisanton.png" alt="Anton de Regt"/>
-      <h1>Anton de Regt<br /><small>I am a Web developer in my free time</small></h1>
+      <img src="/assets/LogoGreen.png" class="imgRound imgBig" alt="Anton de Regt"/>
+      <h1>Anton de Regt<br /><small>I am a Web/App developer based in Amsterdam</small></h1>
       <hr />
     </div>
       <div class="box">
         <div class="imageLeft">
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
             <g>
-              <title>background</title>
               <rect fill="none" height="252" width="252" y="-1" x="-1"/>
               <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%">
                 <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
               </g>
             </g>
             <g>
-              <title>Layer 1</title>
-              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#36B728"/>
               <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(11.809578687124604,0,0,14.153656210190517,-3607.25327877352,-3036.4358253455816) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="10" y="226.8288" x="308.82268" stroke-width="0" fill="#ffffff">&lt;/&gt;</text>
             </g>
           </svg>
@@ -25,7 +23,7 @@
         <div class="textRight">
           <h3>Current projects</h3>
           <p>
-            I'm working on freeCodeCamp's backend certificate. I recently finished the <a href="http://voting-app-antonderegt.herokuapp.com" target="_blank" rel="noopener">voting app</a>.
+            I'm working on freeCodeCamp's backend certificate. This certificate requires you to build projects, the current project I'm working on is the book trading app.
           </p>
         </div>
       </div>
@@ -39,17 +37,18 @@
               </g>
             </g>
             <g>
-              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#82c0ff"/>
+              <ellipse ry="100" rx="100" cy="125" cx="125" stroke-width="0" stroke="#000" fill="#36B728"/>
               <path stroke="#000" d="m125,105.28101c26.38689,-60.83699 129.77159,0 0,78.21899c-129.77159,-78.21899 -26.38689,-139.05598 0,-78.21899z" stroke-opacity="null" stroke-width="0" fill="#ff0000"/>
             </g>
           </svg>
         </div>
+
         <div class="textRight">
-          <h3>Things I've made</h3>
+          <h3>Things I&#39;ve made</h3>
           <p>
             <a href="https://github.com/antonderegt/mevn-github-auth" target="_blank" rel="noopener">MEVN Boilerplate</a>,
-            <a href="https://github.com/antonderegt/nac" target="_blank" rel="noopener">FreeCodeCamp challenges</a>,
-            <a href="https://github.com/antonderegt/fcc" target="_blank" rel="noopener">Program Guide App</a>,
+            <a href="https://github.com/antonderegt/fcc" target="_blank" rel="noopener">FreeCodeCamp challenges</a>,
+            <a href="https://github.com/antonderegt/nac" target="_blank" rel="noopener">Program Guide App</a>,
             <a href="https://antonderegt.github.io/roxean-bot-landing-page/" target="_blank" rel="noopener">Slack Bot</a>.
             You can find more on <a href="https://github.com/antonderegt/" target="_blank" rel="noopener">GitHub</a>.
           </p>
@@ -57,6 +56,38 @@
       </div>
       <div class="box">
         <div class="imageLeft">
+        <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <rect id="svg_1" x="-1" y="-1" width="252" height="252" fill="none"/>
+            <g id="svg_2" display="none">
+             <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+            </g>
+           </g>
+           <g>
+             <ellipse id="svg_4" fill="#36B728" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
+             <path id="svg_6" d="m-426.5,1c62,14 186,182 186.5,182c-0.5,0 -11.5,-3 -11,-3c-0.5,0 -210.5,-250 -209.5,-247" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+             <path stroke="#000" id="svg_7" d="m52.5,91.61557l0,17.95615l26.63761,0l13.02039,40.48897l73.30646,0l24.03554,-61.56068l-113.96284,0l0,3.11486l-23.03716,0l0,0.00071zm60.86609,78.34364c0,6.37447 -4.84232,11.54079 -10.81435,11.54079s-10.81536,-5.16632 -10.81536,-11.54079s4.84253,-11.54135 10.81536,-11.54135s10.81435,5.16725 10.81435,11.54135zm50.08652,0c0,6.37447 -4.84227,11.54079 -10.8147,11.54079s-10.81519,-5.16632 -10.81519,-11.54079s4.84276,-11.54135 10.81519,-11.54135s10.8147,5.16725 10.8147,11.54135z" stroke-width="0" fill="#fff"/>
+            </g>
+           <g>
+            <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+           </g>
+          </svg>
+        </div>
+          <div class="textRight">
+            <h3>What I can build for you</h3>
+            <p>
+              <ul>
+                <li>Web App</li>
+                <li>Website</li>
+                <li>Android App</li>
+                <li>iOS App</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imageLeft">
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
             <g>
               <rect fill="none" height="252" width="252" y="-1" x="-1"/>
@@ -65,13 +96,14 @@
               </g>
             </g>
             <g>
-              <ellipse fill="#82c0ff" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
+              <ellipse fill="#36B728" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
               <path d="m125.00001,80.49999c-32.02999,0 -58.00001,15.92778 -58.00001,35.57705c0,11.23901 8.5253,21.25287 21.79868,27.77034c-1.88862,5.77822 -5.65766,12.17804 -12.94224,17.83842c0,0 17.00377,-1.03874 29.0138,-12.27929c0.69142,0.15651 1.4071,0.27432 2.10505,0.41884c-0.65593,-1.80641 -1.04209,-3.68428 -1.04209,-5.63815c0,-13.25698 15.99247,-23.63753 36.41787,-23.63753c14.67078,0 27.01534,5.3758 32.82639,13.30766c4.94691,-5.23577 7.82254,-11.30015 7.82254,-17.78482c0,-19.64476 -25.97002,-35.57254 -57.99999,-35.57254l0,0zm49.52962,63.69026c0,-10.89926 -14.40426,-19.74169 -32.18342,-19.74169c-17.76946,0 -32.18184,8.84243 -32.18184,19.74169c0,10.90511 14.41238,19.74313 32.18184,19.74313c3.93543,0 7.68357,-0.45459 11.16834,-1.24741c6.66252,6.24023 16.09732,6.81404 16.09732,6.81404c-4.0404,-3.1418 -6.12771,-6.69195 -7.1779,-9.90073c7.36052,-3.61265 12.09565,-9.16887 12.09565,-15.40902z" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff"/>
             </g>
           </svg>
-        </div>
+          </div>
+
         <div class="textRight">
-          <h3>Let's connect</h3>
+          <h3>Let&#39;s connect</h3>
           <p>
             Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
           </p>
@@ -192,7 +224,7 @@ export default {
 .box {
   display: flex;
   text-align: left;
-  padding: 3%;
+  padding: 2%;
 }
 
 .imageLeft {
@@ -204,10 +236,13 @@ export default {
   flex: 5;
 }
 
-img {
+.imgRound {
+  border-radius: 50%;
+}
+
+.imgBig {
   width: 20%;
   height: 20%;
-  border-radius: 50%;
 }
 
 .modalBtn {
@@ -258,57 +293,4 @@ img {
     text-decoration: none;
     cursor: pointer;
 }
-
-#mc_embed_signup{
-  background:#fff;
-  clear:left;
-  font:14px Helvetica,Arial,sans-serif;
-}
-
-/* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
-#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
-#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
-#mc_embed_signup input {border: 1px solid #ABB0B2; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
-#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
-#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
-#mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; transition: all 0.23s ease-in-out 0s; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: normal; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-#mc_embed_signup .button:hover {background-color:#777;}
-#mc_embed_signup .small-meta {font-size: 11px;}
-#mc_embed_signup .nowrap {white-space:nowrap;}
-
-#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}
-#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
-* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
-#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
-#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
-#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
-
-#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
-#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
-#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
-#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
-#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
-
-#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
-#mc_embed_signup .asterisk {color:#e85c41; font-size:150%; font-weight:normal; position:relative; top:5px;}
-#mc_embed_signup .clear {clear:both;}
-
-#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
-#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
-#mc_embed_signup .mc-field-group.input-group label {display:inline;}
-#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
-
-#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%; margin: 0 5%; clear: both;}
-#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-#mc_embed_signup #mce-error-response {display:none;}
-#mc_embed_signup #mce-success-response {color:#529214; display:none;}
-#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
-
-#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
-#mc_embed_signup #num-subscribers {font-size:1.1em;}
-#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
-
-#mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {display:inline-block; margin:2px 0 1em 0; padding:5px 10px; background-color:rgba(255,255,255,0.85); -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size:14px; font-weight:normal; z-index:1; color:#e85c41;}
-#mc_embed_signup #mc-embedded-subscribe-form input.mce_inline_error {border:2px solid #e85c41;}
 </style>
