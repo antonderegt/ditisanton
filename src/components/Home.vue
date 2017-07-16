@@ -76,12 +76,16 @@
           <div class="textRight">
             <h3>What I can build for you</h3>
             <p>
-              <ul>
-                <li>Web App</li>
-                <li>Website</li>
-                <li>Android App</li>
-                <li>iOS App</li>
-              </ul>
+              I love to build apps and it would be awesome if we could build some of the following together:
+              <b>
+                <ul>
+                  <li>Website</li>
+                  <li>Web app</li>
+                  <li>Android app</li>
+                  <li>iOS app</li>
+                </ul>
+              </b>
+              My main focus is on user experience, in my opinion that's what is most important in the long run.
             </p>
           </div>
         </div>
