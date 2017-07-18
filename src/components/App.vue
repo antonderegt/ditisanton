@@ -2,10 +2,11 @@
   <div id="app" class="container">
     <div class="screen">
       <router-link to="/">Home</router-link> |
+      <router-link to="/me">Me</router-link> |
       <router-link to="/social">Social</router-link> |
       <router-link to="/blog">Blog</router-link> |
       <router-link to="/resources">Resources</router-link>
-      <a v-if="this.$store.state.user.local" href="/logout" @click="signOut"> | Log Out</a>
+      <!-- <a v-if="this.$store.state.user.local" href="/logout" @click="signOut"> | Log Out</a> -->
       <!-- <router-link v-else to="/signin">Sign In</router-link> -->
       <transition name="fade" mode="out-in">
         <router-view></router-view>
@@ -14,13 +15,13 @@
       <hr />
     </div>
     <p class="copyright">
-      © Copyright 2017 Anton de Regt
+      © Copyright 2017 Anton de Regt - <a href="mailto:info@ditisanton.com">info@ditisanton.com</a>
     </p>
   </div>
 </template>
 
 <script>
-// TODO: signin via local to add blogs, share blogs in twitter and stuff
+
 export default {
   name: 'app',
   methods: {
