@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-header">
-      <img src="/assets/LogoGreen.png" class="imgRound imgBig" alt="Anton de Regt"/>
+      <img src="/assets/LogoGreen.png" class="imgRound imgBig" alt="ditisAnton Anton de Regt"/>
       <h1>Anton de Regt<br /><small>I am a Web/App developer based in Amsterdam</small></h1>
       <hr />
     </div>
@@ -23,7 +23,7 @@
         <div class="textRight">
           <h3>Current projects</h3>
           <p>
-            I'm working on freeCodeCamp's backend certificate. This certificate requires you to build projects, the current project I'm working on is the book trading app.
+            I'm working on an Android and iOS app that has the goal of informing employees. The company I'm doing this project for has a lot of TV screens displaying information for its employees. Their current solution is expensive and information is only visible in certain spots. The app I'm building will safe them a lot of money otherwise spend on components, infrastructure and maintenance and at the same time increase availability of the information.
           </p>
         </div>
       </div>

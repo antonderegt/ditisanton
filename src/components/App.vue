@@ -15,7 +15,7 @@
       <hr />
     </div>
     <p class="copyright">
-      © Copyright 2017 Anton de Regt - <a href="mailto:info@ditisanton.com">info@ditisanton.com</a>
+      © Copyright 2017 Anton de Regt - ditisAnton - <a href="mailto:info@ditisanton.com">info@ditisanton.com</a>
     </p>
   </div>
 </template>
