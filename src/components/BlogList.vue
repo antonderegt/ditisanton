@@ -2,6 +2,7 @@
   <div>
     <h1>Blog</h1>
     <hr>
+    <BlogPost title="This is what you need to know about Socially Responsible Programming" link="https://medium.freecodecamp.org/this-is-what-you-need-to-know-about-socially-responsible-programming-1085d31faec1" text="Lately, I have seen a lot of stories about people getting their first developer job. Like this one or this one or this one. This is great news, but... Their focus seems to be about getting the good..."/>
     <BlogPost title="Nobody is safe on the internet" link="https://medium.com/@antonderegt/nobody-is-safe-on-the-internet-e8ddf41925f0" text="Often I hear people say: “I don’t have much to hide, why would I bother keeping my data safe?”, a lot of companies would agree with you. Data is like gold, 1 MB of (potential) customer data can be..."/>
     <BlogPost title="Bearded Dragon Digest vol. 02" link="https://medium.com/@antonderegt/bearded-dragon-digest-vol-02-6a4bd8043fbe" text="Something disturbing is going on, there’s a disease running in the cohort… A few dragons are showing signs of the digital disease called ‘Data Hoarder’. Further investigation should tell us if this..."/>
     <BlogPost title="Bearded Dragon Digest vol. 01" link="https://medium.com/chingu/bearded-dragon-digest-vol-01-9eb597f77bd3" text="It’s amazing to see so much collaboration and discussions already in the very first week! A lot happened during this first week, we welcomed 42..."/>
