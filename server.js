@@ -1,7 +1,6 @@
 const express = require('express'),
       path = require('path'),
       bodyParser = require('body-parser'),
-      mongoose = require('mongoose'),
       passport = require('passport'),
       session = require('express-session'),
       blog = require('./server/routes/blog'),
@@ -11,9 +10,6 @@ const express = require('express'),
 
 require('dotenv').load()
 require('./passport')(passport)
-
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGO_URI);
 
 let app = express()
 

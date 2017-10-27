@@ -5,6 +5,35 @@
       <h1>Anton de Regt<br /><small>I am a Web/App developer based in Amsterdam</small></h1>
       <hr />
     </div>
+
+    <div class="box">
+      <div class="imageLeft">
+      <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+         <g>
+          <rect id="svg_1" x="-1" y="-1" width="252" height="252" fill="none"/>
+          <g id="svg_2" display="none">
+           <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+          </g>
+         </g>
+         <g>
+           <ellipse id="svg_4" fill="#36B728" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
+           <path id="svg_6" d="m-426.5,1c62,14 186,182 186.5,182c-0.5,0 -11.5,-3 -11,-3c-0.5,0 -210.5,-250 -209.5,-247" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+           <path stroke="#000" id="svg_7" d="m52.5,91.61557l0,17.95615l26.63761,0l13.02039,40.48897l73.30646,0l24.03554,-61.56068l-113.96284,0l0,3.11486l-23.03716,0l0,0.00071zm60.86609,78.34364c0,6.37447 -4.84232,11.54079 -10.81435,11.54079s-10.81536,-5.16632 -10.81536,-11.54079s4.84253,-11.54135 10.81536,-11.54135s10.81435,5.16725 10.81435,11.54135zm50.08652,0c0,6.37447 -4.84227,11.54079 -10.8147,11.54079s-10.81519,-5.16632 -10.81519,-11.54079s4.84276,-11.54135 10.81519,-11.54135s10.8147,5.16725 10.8147,11.54135z" stroke-width="0" fill="#fff"/>
+          </g>
+         <g>
+          <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+         </g>
+        </svg>
+      </div>
+        <div class="textRight">
+          <h3>Hire me</h3>
+          <!-- @TODO add link to article about writing an app in one week -->
+          <p>
+            Hire me if you need an <b>iOS</b> and <b>Android</b> app fast!</br>
+          </p>
+        </div>
+      </div>
+
       <div class="box">
         <div class="imageLeft">
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
@@ -23,10 +52,11 @@
         <div class="textRight">
           <h3>Current projects</h3>
           <p>
-            I'm working on an Android and iOS app that has the goal of informing employees. The company I'm doing this project for has a lot of TV screens displaying information for its employees. Their current solution is expensive and information is only visible in certain spots. The app I'm building will safe them a lot of money otherwise spend on components, infrastructure and maintenance and at the same time increase availability of the information.
+            I'm working on an Android and iOS app that distributes important comapany information to employee phones.
           </p>
         </div>
       </div>
+
       <div class="box">
         <div class="imageLeft">
           <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="https://www.w3.org/2000/svg">
@@ -42,53 +72,17 @@
             </g>
           </svg>
         </div>
-
         <div class="textRight">
           <h3>Things I&#39;ve made</h3>
           <p>
             <a href="https://github.com/antonderegt/mevn-github-auth" target="_blank" rel="noopener">MEVN Boilerplate</a>,
-            <a href="https://github.com/antonderegt/fcc" target="_blank" rel="noopener">FreeCodeCamp challenges</a>,
+            <a href="https://github.com/antonderegt/fcc" target="_blank" rel="noopener">freeCodeCamp challenges</a>,
             <a href="https://github.com/antonderegt/nac" target="_blank" rel="noopener">Program Guide App</a>,
             <a href="https://antonderegt.github.io/roxean-bot-landing-page/" target="_blank" rel="noopener">Slack Bot</a>.
             You can find more on <a href="https://github.com/antonderegt/" target="_blank" rel="noopener">GitHub</a>.
           </p>
         </div>
       </div>
-      <div class="box">
-        <div class="imageLeft">
-        <svg width="100%" height="100%" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
-           <g>
-            <rect id="svg_1" x="-1" y="-1" width="252" height="252" fill="none"/>
-            <g id="svg_2" display="none">
-             <rect id="svg_3" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
-            </g>
-           </g>
-           <g>
-             <ellipse id="svg_4" fill="#36B728" stroke="#000" stroke-width="0" cx="125" cy="125" rx="100" ry="100"/>
-             <path id="svg_6" d="m-426.5,1c62,14 186,182 186.5,182c-0.5,0 -11.5,-3 -11,-3c-0.5,0 -210.5,-250 -209.5,-247" opacity="0.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
-             <path stroke="#000" id="svg_7" d="m52.5,91.61557l0,17.95615l26.63761,0l13.02039,40.48897l73.30646,0l24.03554,-61.56068l-113.96284,0l0,3.11486l-23.03716,0l0,0.00071zm60.86609,78.34364c0,6.37447 -4.84232,11.54079 -10.81435,11.54079s-10.81536,-5.16632 -10.81536,-11.54079s4.84253,-11.54135 10.81536,-11.54135s10.81435,5.16725 10.81435,11.54135zm50.08652,0c0,6.37447 -4.84227,11.54079 -10.8147,11.54079s-10.81519,-5.16632 -10.81519,-11.54079s4.84276,-11.54135 10.81519,-11.54135s10.8147,5.16725 10.8147,11.54135z" stroke-width="0" fill="#fff"/>
-            </g>
-           <g>
-            <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
-           </g>
-          </svg>
-        </div>
-          <div class="textRight">
-            <h3>What I can build for you</h3>
-            <p>
-              I love to build apps and it would be awesome if we could build some of the following together:
-              <b>
-                <ul>
-                  <li>Website</li>
-                  <li>Web app</li>
-                  <li>Android app</li>
-                  <li>iOS app</li>
-                </ul>
-              </b>
-              My main focus is on user experience, in my opinion that's what is most important in the long run.
-            </p>
-          </div>
-        </div>
 
         <div class="box">
           <div class="imageLeft">
@@ -109,7 +103,7 @@
         <div class="textRight">
           <h3>Let&#39;s connect</h3>
           <p>
-            Click the buttons below if you want to be the first to receive updates or send me a message (AMA).
+            Click the buttons below if you don't want to miss out on blog updates or send me a message.
           </p>
 
           <button id="subscribeBtn" class="modalBtn" @click="toggleModal('SUBSCIBE')">Stay Connected</button>
